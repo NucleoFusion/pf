@@ -107,7 +107,7 @@
 </script>
 
 <Sidebar.Provider bind:open={isOpen} class="pt-15">
-  <Sidebar.Root class="pt-15 border-transparent " collapsible="icon">
+  <Sidebar.Root class="mt-15 border-transparent " collapsible="icon">
     <Sidebar.Header>
       <Sidebar.Menu>
         <Sidebar.MenuItem class="relative">

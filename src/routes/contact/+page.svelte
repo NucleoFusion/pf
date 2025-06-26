@@ -4,15 +4,35 @@
   import Input from "$lib/components/ui/input/input.svelte";
   import Label from "$lib/components/ui/label/label.svelte";
   import Textarea from "$lib/components/ui/textarea/textarea.svelte";
+  import axios from "axios";
+  import { toast } from "svelte-sonner";
 
   let email = $state("");
   let content = $state("");
+  let subject = $state("");
+  let name = $state("");
+
+  const sendMail = () => {
+    toast.promise(
+      axios.post(`${import.meta.env.VITE_MAILER_URI}/send`, {
+        email,
+        subject,
+        name,
+        content,
+      }),
+      {
+        loading: "Sending...",
+        success: "Sent Successfully!",
+        error: "An Error Occurred!",
+      },
+    );
+  };
 </script>
 
 <!-- TODO: Send Logic -->
 
 <div class="w-[100vw] h-[100vh] grid justify-center items-center">
-  <Card.Root class="w-[30vw]">
+  <Card.Root class="w-[35vw]">
     <Card.Header>
       <Card.Title class="text-3xl text-center">Contact Me</Card.Title>
     </Card.Header>
@@ -27,7 +47,17 @@
             bind:value={email}
           />
         </div>
-        <div class="mt-3">
+        <div class="grid grid-cols-2 gap-10">
+          <div class="mt-3">
+            <Label for="email" class="pb-2 ml-1 text-md">Name</Label>
+            <Input name="name" placeholder="Name" bind:value={name} />
+          </div>
+          <div class="mt-3">
+            <Label for="email" class="pb-2 ml-1 text-md">Subject</Label>
+            <Input name="subject" placeholder="Subject" bind:value={subject} />
+          </div>
+        </div>
+        <div class="mt-7">
           <Label for="content" class="pb-2 ml-1 text-md">Body</Label>
           <Textarea
             class="w-full h-[20vh]"
@@ -40,7 +70,7 @@
     </Card.Content>
     <Card.Footer class="pt-10 grid justify-center text-center">
       <div>
-        <Button>Send Email</Button>
+        <Button onclick={sendMail}>Send Email</Button>
       </div>
     </Card.Footer>
   </Card.Root>
