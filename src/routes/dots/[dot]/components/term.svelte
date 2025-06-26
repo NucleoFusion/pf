@@ -6,7 +6,7 @@
   <h1 class="text-4xl font-bold">Terminal</h1>
   <Separator class="my-3" />
   <div class="w-[50vw] pl-8 pt-4 grid justify-center items-center">
-    <video controls class="rounded">
+    <video preload="none" controls class="rounded">
       <source src="/term.mp4" type="video/mp4" />
     </video>
   </div>

@@ -6,7 +6,7 @@
   <h1 class="text-4xl font-bold">AGS</h1>
   <Separator class="my-3" />
   <div class="w-[50vw] pl-8 pt-4 grid justify-center items-center">
-    <img src="/ags.png" alt="desktop layout" />
+    <img loading="lazy" src="/ags.png" alt="desktop layout" />
   </div>
   <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
     I have always felt that desktops are bloated and the designs for each are

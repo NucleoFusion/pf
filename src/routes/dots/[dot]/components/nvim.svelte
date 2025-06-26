@@ -6,7 +6,7 @@
   <h1 class="text-4xl font-bold">NeoVim</h1>
   <Separator class="my-3" />
   <div class="w-[50vw] pl-8 pt-4 grid justify-center items-center">
-    <img src="/nvim.png" alt="nvim layout" />
+    <img loading="lazy" src="/nvim.png" alt="nvim layout" />
   </div>
   <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
     Neovim is something that changed the way I write code, although at the start
