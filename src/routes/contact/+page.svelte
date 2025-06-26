@@ -14,7 +14,7 @@
 
   const sendMail = () => {
     toast.promise(
-      axios.post(`${import.meta.env.VITE_MAILER_URI}/send`, {
+      axios.post(`http://mailer:8888/send`, {
         email,
         subject,
         name,
