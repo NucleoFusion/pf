@@ -14,7 +14,7 @@
 
   const sendMail = () => {
     toast.promise(
-      axios.post(`http://mailer:8888/send`, {
+      axios.post(`https://mailer.nucleofusion.com/send`, {
         email,
         subject,
         name,
