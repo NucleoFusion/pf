@@ -32,7 +32,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         D2D is an open-source platform that bridges the gap between designers
         and developers. It enables members to connect, collaborate, and support
         each other by posting help requests, sharing knowledge, and engaging in
@@ -44,7 +44,7 @@
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         <!-- My Experience, a very large and complex application. Use case of each -->
         <!-- thing. -->
         D2D, is my first really really large project. It was built when my Friends
@@ -74,5 +74,5 @@
       </p>
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50"></p>
+  <p class="px-5 pt-3 text-lg md:pr-50"></p>
 </div>

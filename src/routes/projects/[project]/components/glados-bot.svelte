@@ -30,7 +30,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         The GlaDOS Community Bot is a powerful administration tool designed to
         streamline server management and enhance the community experience. Built
         with Node.js and Discord.js, it provides robust functionality for both
@@ -41,7 +41,7 @@
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         GladOS Bot is a special project to me. It was the first project I
         participated in for my community, and learnt a lot. GlaDOS introduced me
         to how production level code was handled, how github repo's with
@@ -56,5 +56,5 @@
       </p>
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50"></p>
+  <p class="px-5 pt-3 text-lg md:pr-50"></p>
 </div>

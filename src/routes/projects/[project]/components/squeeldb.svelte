@@ -28,7 +28,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         SqueelDB is a lightweight, blazing-fast, in-memory key-value database
         built using Zig. Inspired by the simplicity and performance of Redis,
         SqueelDB is designed for developers who want fine control and minimal
@@ -38,7 +38,7 @@
     <h2 class="text-2xl font-bold pt-2">My Expectations</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         SqueelDB is one of my planned projects I am most looking forward both
         due to it being on one of my favorite topics of Databases, and also the
         fact I get to actually build Something in Zig. With this project I aim
@@ -48,5 +48,5 @@
       </p>
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50"></p>
+  <p class="px-5 pt-3 text-lg md:pr-50"></p>
 </div>

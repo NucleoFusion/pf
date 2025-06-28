@@ -32,7 +32,7 @@
 <!-- TODO: Send Logic -->
 
 <div class="w-[100vw] h-[100vh] grid justify-center items-center">
-  <Card.Root class="w-[35vw]">
+  <Card.Root class="w-[80vw] md:w-[50vw] lg:w-[35vw]">
     <Card.Header>
       <Card.Title class="text-3xl text-center">Contact Me</Card.Title>
     </Card.Header>
@@ -47,7 +47,7 @@
             bind:value={email}
           />
         </div>
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid md:grid-cols-2 gap-2 md:gap-10">
           <div class="mt-3">
             <Label for="email" class="pb-2 ml-1 text-md">Name</Label>
             <Input name="name" placeholder="Name" bind:value={name} />

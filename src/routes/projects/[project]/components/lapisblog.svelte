@@ -29,7 +29,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         LapisBlog is a modern, community-driven discussion platform where users
         can create posts, share thoughts, and engage in topic-based
         conversations. Designed with a focus on simplicity and usability,
@@ -40,7 +40,7 @@
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         LapisBlog was my first large project with Go involving multiple routes
         and endpoints. The reason why its in Hiatus right now is the fact that
         due to my exams, I had to put off work on this, and as soon as I came
@@ -53,5 +53,5 @@
       </p>
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50"></p>
+  <p class="px-5 pt-3 text-lg md:pr-50"></p>
 </div>

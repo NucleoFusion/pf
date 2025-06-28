@@ -10,7 +10,7 @@
       <source src="/niri.mp4" type="video/mp4" />
     </video>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     Window Managers/Tiling Managers are an integral part of any Operating
     System, managing how your windows behave and how they communicate with it.
     <br /><br />

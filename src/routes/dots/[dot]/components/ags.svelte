@@ -8,7 +8,7 @@
   <div class="w-[50vw] pl-8 pt-4 grid justify-center items-center">
     <img loading="lazy" src="/ags.png" alt="desktop layout" />
   </div>
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     I have always felt that desktops are bloated and the designs for each are
     very shallow. AGS changes the game, It allows me to use GTK (GUI Library for
     Linux) with JSX/TSX. With reactive bindings for popular components such as

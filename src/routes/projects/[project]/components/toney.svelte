@@ -28,7 +28,7 @@
         <li>Bubbletea</li>
       </ol>
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         Toney is a fast, lightweight, terminal-based note-taking app for the
         modern developer. Built with Bubbletea, Toney brings a sleek TUI
         interface with markdown rendering, file navigation, and native Neovim
@@ -38,7 +38,7 @@
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         Toney is a unique project for me, its something that I developed for my
         daily use because I am very forgetful, I like to be able to write down
         my thoughts and my plans. And since there was no good note-taking app I

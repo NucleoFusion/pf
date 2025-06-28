@@ -2,10 +2,10 @@
   import Seperator from "$lib/components/ui/separator/separator.svelte";
 </script>
 
-<div class="w-[100vw] h-[100vh] py-[30vh] px-[25vw] grid items-center">
-  <div class="grid container gap-5 items-center w-[50vw]">
+<div class="w-[100vw] h-[100vh] sm:py-[30vh] sm:px-[25vw] grid items-center">
+  <div class="grid container gap-5 items-center">
     <div class="justify-end text-end w-full">
-      <h1 class="cursive text-5xl">Lakshit Singh</h1>
+      <h1 class="cursive text-4xl sm:text-5xl">Lakshit Singh</h1>
       <h4 class="text-base">
         aka <span class="font-bold text-xl">NucleoFusion</span>
       </h4>

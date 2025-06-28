@@ -7,7 +7,7 @@
   <h1 class="text-4xl font-bold">Skills</h1>
   <Separator class="my-3" />
   <div class="pl-4 pt-4">
-    <p class="pr-50">
+    <p class="md:pr-50">
       Its been a little over 3 years since I've started to explore Computer
       Science. From starting with Python & C++, and being completely clueless on
       how to use that knowledge to make applications, to actually being able to
@@ -29,7 +29,7 @@
         <Icon icon="simple-icons:rust" width="10vh" />
         <Icon icon="simple-icons:gnubash" width="10vh" />
       </div>
-      <p class="pl-4 pr-50">
+      <p class="pl-4 md:pr-50">
         Although I've touched all of these languages, Go, JS/TS & C# are the
         ones I write the most, be it for their speed (Go) or their ease of
         use(TS). Whereas C++ & Python laid my foundation and started me off,
@@ -57,7 +57,7 @@
         <Icon icon="lineicons:mongodb" width="10vh" />
         <Icon icon="devicon-plain:redis" width="10vh" />
       </div>
-      <p class="pl-4 pr-50">
+      <p class="pl-4 md:pr-50">
         To be honest, I'm not the best at designing and finding out what colors
         go with what, but, I can assure you that I absolutely enjoy building
         frontend apps, be that managing and handling complex data. Creating
@@ -80,7 +80,7 @@
         <Icon icon="devicon-plain:neovim" width="10vh" />
         <Icon icon="file-icons:tmux" width="10vh" />
       </div>
-      <p class="pl-4 pr-50">
+      <p class="pl-4 md:pr-50">
         My Development Environment consists mainly of two things only, my
         Operating System, where nothing can match Arch or Arch-based distros,
         and my Editor, Neovim, allowing me to go to speeds unimaginable to the

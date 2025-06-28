@@ -30,7 +30,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         A minimal OAuth2 implementation with a clear separation between the
         Authorization Server and the Resource Server. Built for educational
         purposes and practical integration scenarios.
@@ -39,7 +39,7 @@
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         For a long time I was fascinated by how OAuth worked, Like, it was one
         of the things that kept me up at night. No matter how much I racked my
         brain, I could not find a way I could recreate even a crude version of
@@ -53,5 +53,5 @@
       </p>
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50"></p>
+  <p class="px-5 pt-3 text-lg md:pr-50"></p>
 </div>

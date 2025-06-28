@@ -29,7 +29,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         An Operating System. (To be Decided, in very early stages)
       </p>
     </div>

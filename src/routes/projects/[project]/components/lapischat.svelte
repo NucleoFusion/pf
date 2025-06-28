@@ -31,7 +31,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         LapisChat is a minimal, ephemeral chat application built with Rust and
         Tauri. It enables two users to connect in a temporary session, exchange
         messages in real-time, and leave without a trace. Once the session ends,
@@ -41,7 +41,7 @@
     <h2 class="text-2xl font-bold pt-2">My Expectations</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         LapisChat was driven by my curiosity to learn Rust and Websockets.
         Therefore I decided on a Chat app with a twist. Completely Anonymous.
       </p>

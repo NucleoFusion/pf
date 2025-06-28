@@ -5,7 +5,7 @@
 <div class="mt-3 w-[84vw] mb-20">
   <h1 class="text-4xl font-bold">Introduction</h1>
   <Separator class="my-3" />
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     Since I started my Computer Science journey, I'd always wanted to manage and
     have a server, where I could host all sorts of stuff, and deploy different
     services that ease my daily online life, such as adblocker.
@@ -29,7 +29,7 @@
       <span class="font-bold">Storage</span>: 300GB HDD {`{as of June 2025}`}
     </li>
   </ol>
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     Currently I have Proxmox VE setup and use Ubuntu Server Images for my VM's.
     I have a lot of plans for the homelab, which you can see in the sidebar as
     well.

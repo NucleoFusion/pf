@@ -5,7 +5,7 @@
 <div class="mt-3 w-[84vw] mb-20">
   <h1 class="text-4xl font-bold">Upgrade Path</h1>
   <Separator class="my-3" />
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     Through careful considerations I have chosen a modern motherboard, although
     it may be limited in RAM Speeds, and NVMe Slots but that are not that
     required in the server. And Since AMD announced support for AM4 for a few
@@ -24,7 +24,7 @@
       <span class="font-bold">GPU</span>: Get a cheap GPU
     </li>
   </ol>
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     And further down the line, I can look towards a processor that offers more
     cores and threads, and maybe even motherboard that will support higher RAM
     Speeds, and more slots.

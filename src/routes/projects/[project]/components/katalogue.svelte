@@ -29,7 +29,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         Katalogue is a social platform to explore, manage, and share your
         favorite games, movies, books, and more. Build your personal collection,
         leave reviews and recommendations, discover new titles through your
@@ -41,7 +41,7 @@
     <h2 class="text-2xl font-bold pt-2">My Expectations</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         Have you ever searched through Google, Reddit and other sites to find a
         suitable movie, game etc for you? I have. And thats why My Friend and I
         decided to create Katalogue. It is a platform to share your reviews, and

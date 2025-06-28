@@ -29,7 +29,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         DevChat is a GitHub-integrated communication platform crafted for
         developers and teams who live in their commits, reviews, and issue
         threads. With repo-focused chat, PR/issue handling, GitHub Discussions
@@ -40,7 +40,7 @@
     <h2 class="text-2xl font-bold pt-2">My Expectations</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         With my growing Repositories and the hunger to increase that more, I
         have found it difficult to communicate with people on Github, It would
         always require an alternate platform to interact with them. <br />

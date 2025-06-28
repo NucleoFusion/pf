@@ -8,7 +8,7 @@
   <div class="w-[50vw] pl-8 pt-4 grid justify-center items-center">
     <img loading="lazy" src="/nvim.png" alt="nvim layout" />
   </div>
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     Neovim is something that changed the way I write code, although at the start
     it was something that slowed me down tremendously, repeatedly looking at
     docs to find out how to save, how to quit etc. But now, it has become a part

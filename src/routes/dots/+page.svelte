@@ -5,7 +5,7 @@
 <div class="mt-3 w-[84vw] mb-20">
   <h1 class="text-4xl font-bold">Introduction</h1>
   <Separator class="my-3" />
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     When I switched to Linux a while back from windows. I had finally realized
     the shackles Windows had put on me, and I often describe that, Windows was
     nice, but it always felt like it was not <span class="italic">my</span>

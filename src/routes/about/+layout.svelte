@@ -4,6 +4,10 @@
   import { fade } from "svelte/transition";
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
+  import * as Sheet from "$lib/components/ui/sheet/index.ts";
+  import Menu from "@lucide/svelte/icons/menu";
+  import Button from "$lib/components/ui/button/button.svelte";
+  import Separator from "$lib/components/ui/separator/separator.svelte";
 
   interface Item {
     link: string;
@@ -66,7 +70,7 @@
   let { children } = $props();
 </script>
 
-<Sidebar.Provider bind:open={isOpen} class="pt-15">
+<Sidebar.Provider bind:open={isOpen} class="hidden md:flex pt-15">
   <Sidebar.Root class="mt-15 border-transparent z-10" collapsible="icon">
     <Sidebar.Header>
       <Sidebar.Menu>
@@ -142,3 +146,77 @@
     {@render children()}
   </main>
 </Sidebar.Provider>
+
+<div class="pt-15">
+  <Sheet.Root>
+    <Sheet.Content side="left" class="md:hidden py-5 px-2">
+      <div class="text-xl font-bold">
+        <h1 in:fade={fadeIn} class="text-2xl w-full pl-10">About Me</h1>
+      </div>
+      <Separator />
+      {#if isOpen}
+        <div in:fade={fadeIn}>
+          {#key selected}
+            <div class="my-3 px-5">
+              <h2 class="text-md font-bold text-xl text-muted-accent">
+                Professional
+              </h2>
+              <div class="mt-5 pl-2 pt-2 grid grid-rows gap-3">
+                {#each items.professional as item}
+                  <div class="grid grid-cols-1 justify-center items-center">
+                    <Button
+                      class={`text-foreground bg-transparent hover:bg-accent ${`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}`}
+                      onclick={() => redirectTo(item)}>{item.title}</Button
+                    >
+                  </div>
+                {/each}
+              </div>
+            </div>
+            <Separator />
+            <div class="my-5 px-5">
+              <h2 class="text-md font-bold text-xl text-muted-accent">
+                Personal
+              </h2>
+              <div class="mt-5 pl-2 pt-2 grid grid-rows gap-3">
+                {#each items.personal as item}
+                  <div class="grid grid-cols-1 justify-center items-center">
+                    <Button
+                      class={`text-foreground bg-transparent hover:bg-accent ${`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}`}
+                      onclick={() => redirectTo(item)}>{item.title}</Button
+                    >
+                  </div>
+                {/each}
+              </div>
+            </div>
+          {/key}
+        </div>
+      {/if}
+    </Sheet.Content>
+
+    <main class="px-4">
+      <div class="flex gap-3">
+        <Sheet.Trigger>
+          <Menu />
+        </Sheet.Trigger>
+        <Breadcrumb.Root class="pt-0.5">
+          <Breadcrumb.List>
+            <Breadcrumb.Item>
+              <Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Separator />
+            <Breadcrumb.Item>
+              <Breadcrumb.Link href="/about">About</Breadcrumb.Link>
+            </Breadcrumb.Item>
+            <Breadcrumb.Separator />
+            <Breadcrumb.Item>
+              <Breadcrumb.Link href={selected.link}
+                >{selected.title}</Breadcrumb.Link
+              >
+            </Breadcrumb.Item>
+          </Breadcrumb.List>
+        </Breadcrumb.Root>
+      </div>
+      {@render children()}
+    </main>
+  </Sheet.Root>
+</div>

@@ -28,7 +28,7 @@
       </ol>
       <br />
       <br />
-      <p class="pr-50">
+      <p class="md:pr-50">
         Neo is a blazingly fast programming language with a focus on performance
         and seamless C interoperability. Built with Go, its compiler translates
         Neo code directly to highly optimized C, enabling efficient execution
@@ -40,7 +40,7 @@
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
     <div class="pl-4 pt-4 text-lg">
-      <p class="pr-50">
+      <p class="md:pr-50">
         <!-- My Experience, what i wanted, and why Go was not it. -->
         Since the dawn of python (when I started learning it), I often wondered about
         how I was able to create stuff with code. How code was able to tell the cpu
@@ -58,5 +58,5 @@
       </p>
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50"></p>
+  <p class="px-5 pt-3 text-lg md:pr-50"></p>
 </div>

@@ -6,7 +6,7 @@
 <div class="mt-3">
   <h1 class="text-4xl font-bold">Introduction</h1>
   <Separator class="my-3" />
-  <p class="px-5 pt-3 text-lg pr-50">
+  <p class="px-5 pt-3 text-lg md:pr-50">
     Hi! My name is Lakshit Singh, also known as NucleoFusion. I am a developer
     curiously exploring the realm of Computer Science. I currently specialize in
     building Backend / Systems Solutions for complex problems in everyday life.

@@ -10,7 +10,7 @@
   <h1 class="text-4xl font-bold">Introduction</h1>
   <Separator class="my-3" />
   <div
-    class="pl-8 pt-4 grid gap-10 grid-cols-2 justify-center items-center pr-50"
+    class="pl-8 pt-4 text-lg grid gap-10 grid-cols-2 justify-center items-center md:pr-50"
   >
     <div>
       <img
@@ -39,7 +39,7 @@
       />
     </div>
   </div>
-  <p class="px-5 pt-3 text-lg pr-50 pl-8 pt-10">
+  <p class="px-5 pt-3 text-lg md:pr-50 pl-8 pt-10">
     I have been contributing to Open Source projects, mainly those that were
     started by the Community I'm a part of, such as GladOS Bot, which was one of
     the most prominent ones. But right now, I have a vision for Toney, and the
