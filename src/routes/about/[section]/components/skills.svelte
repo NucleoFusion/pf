@@ -6,8 +6,8 @@
 <div class="my-3 mb-20">
   <h1 class="text-4xl font-bold">Skills</h1>
   <Separator class="my-3" />
-  <div class="pl-4 pt-4">
-    <p class="md:pr-50">
+  <div class="text-lg pl-4 pt-4">
+    <p class="text-lg md:pr-50">
       Its been a little over 3 years since I've started to explore Computer
       Science. From starting with Python & C++, and being completely clueless on
       how to use that knowledge to make applications, to actually being able to
@@ -19,7 +19,9 @@
     <div class="pt-10">
       <h2 class="font-bold text-2xl">Languages</h2>
       <Separator class="my-3" />
-      <div class=" py-10 grid grid-cols-8 gap-[5vw] pl-20 pr-100">
+      <div
+        class=" py-10 grid grid-cols-3 lg:grid-cols-4 gap-[2vw] lg:gap-[5vw] pl-10 lg:pl-20 pr-20 xl:pr-100"
+      >
         <Icon icon="lineicons:go" width="10vh" />
         <Icon icon="lineicons:typescript" width="10vh" />
         <Icon icon="devicon-plain:cplusplus" width="10vh" />
@@ -48,7 +50,9 @@
     <div class="pt-10">
       <h2 class="font-bold text-2xl">Frameworks/Libraries & Databases</h2>
       <Separator class="my-3" />
-      <div class=" py-10 grid grid-cols-7 gap-[5vw] pl-20 pr-100">
+      <div
+        class=" py-10 grid grid-cols-3 lg:grid-cols-4 gap-[2vw] lg:gap-[5vw] pl-10 lg:pl-20 pr-20 xl:pr-100"
+      >
         <Icon icon="file-icons:svelte" width="10vh" />
         <Icon icon="simple-icons:react" width="10vh" />
         <Icon icon="mdi:angular" width="10vh" />
@@ -75,7 +79,9 @@
     <div class="pt-10">
       <h2 class="font-bold text-2xl">My Development Environment</h2>
       <Separator class="my-3" />
-      <div class=" py-10 grid grid-cols-3 gap-[5vw] pl-20 pr-100">
+      <div
+        class=" py-10 grid grid-cols-3 gap-[2vw] lg:gap-[5vw] pl-10 lg:pl-20 pr-20 xl:pr-100"
+      >
         <Icon icon="mdi:arch" width="10vh" />
         <Icon icon="devicon-plain:neovim" width="10vh" />
         <Icon icon="file-icons:tmux" width="10vh" />

@@ -33,18 +33,18 @@
     A rogue one, I know.
   </p>
   <div
-    class="w-full h-[40vh] grid grid-cols-4 px-30 text-center items-center justify-center"
+    class="w-full h-[40vh] grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 xl:px-30 text-center items-center justify-center border border-white border-solid"
   >
-    <div>
+    <div class="grid justify-center">
       <Icon icon="file-icons:arch-linux" height="15vh" />
     </div>
-    <div>
+    <div class="grid justify-center">
       <Icon icon="simple-icons:neovim" height="15vh" />
     </div>
-    <div>
+    <div class="grid justify-center">
       <Icon icon="wpf:guitar" height="15vh" />
     </div>
-    <div>
+    <div class="grid justify-center">
       <Icon icon="famicons:book" height="15vh" />
     </div>
   </div>

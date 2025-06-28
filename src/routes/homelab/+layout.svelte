@@ -186,7 +186,7 @@
   </main>
 </Sidebar.Provider>
 
-<div class="pt-15">
+<div class="pt-15 md:hidden">
   <Sheet.Root>
     <Sheet.Content side="left" class="md:hidden py-5 px-2">
       <div class="text-xl font-bold">

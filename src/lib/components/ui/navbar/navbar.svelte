@@ -68,7 +68,7 @@
   <NavigationMenu.List
     class="w-[20vw] sm:w-[50vw] grid justify-end gap-3 px-5 sm:px-10 "
   >
-    <div class="w-full hidden lg:flex justify-end items-center">
+    <div class="w-full hidden lg:flex justify-end items-center gap-1">
       <NavigationMenu.Item>
         <NavigationMenu.Link href="/dots">
           <span class="hidden sm:inline"> Dotfiles </span>
