@@ -20,7 +20,7 @@
       <h2 class="font-bold text-2xl">Languages</h2>
       <Separator class="my-3" />
       <div
-        class=" py-10 grid grid-cols-3 lg:grid-cols-4 gap-[2vw] lg:gap-[5vw] pl-10 lg:pl-20 pr-20 xl:pr-100"
+        class=" py-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[5vw] sm:pl-10 lg:pl-20 sm:pr-20 xl:pr-100"
       >
         <Icon icon="lineicons:go" width="10vh" />
         <Icon icon="lineicons:typescript" width="10vh" />
@@ -51,7 +51,7 @@
       <h2 class="font-bold text-2xl">Frameworks/Libraries & Databases</h2>
       <Separator class="my-3" />
       <div
-        class=" py-10 grid grid-cols-3 lg:grid-cols-4 gap-[2vw] lg:gap-[5vw] pl-10 lg:pl-20 pr-20 xl:pr-100"
+        class=" py-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[5vw] sm:pl-10 lg:pl-20 sm:pr-20 xl:pr-100"
       >
         <Icon icon="file-icons:svelte" width="10vh" />
         <Icon icon="simple-icons:react" width="10vh" />
@@ -80,7 +80,7 @@
       <h2 class="font-bold text-2xl">My Development Environment</h2>
       <Separator class="my-3" />
       <div
-        class=" py-10 grid grid-cols-3 gap-[2vw] lg:gap-[5vw] pl-10 lg:pl-20 pr-20 xl:pr-100"
+        class=" py-10 grid grid-cols-2 sm:grid-cols-3 gap-[5vw] sm:pl-10 lg:pl-20 sm:pr-20 xl:pr-100"
       >
         <Icon icon="mdi:arch" width="10vh" />
         <Icon icon="devicon-plain:neovim" width="10vh" />

@@ -231,6 +231,21 @@
         <div in:fade={fadeIn}>
           {#key selected}
             <div class="my-3 px-5">
+              <div class="mt-5 pl-2 pt-2 grid grid-rows gap-3">
+                <div class="grid grid-cols-1 justify-center items-center">
+                  <Button
+                    class={`text-foreground bg-transparent hover:bg-accent ${`${selected.abb == "" ? "bg-muted text-foreground" : ""}`}`}
+                    onclick={() =>
+                      redirectTo({
+                        abb: "",
+                        title: "Introduction",
+                        link: "/projects",
+                      })}>Introduction</Button
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="my-3 px-5">
               <h2 class="text-md font-bold text-xl text-muted-accent">
                 Highlighted
               </h2>

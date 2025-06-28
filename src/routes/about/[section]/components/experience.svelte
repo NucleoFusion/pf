@@ -10,7 +10,7 @@
     <h2 class="font-bold text-2xl">Professional</h2>
     <Separator class="my-3" />
     <!-- Byte4 -->
-    <Card.Root class="w-[80vw] md:w-[55vw] lg:w-[50vw] mx-10 mt-7">
+    <Card.Root class="w-[80vw] md:w-[55vw] lg:w-[50vw] sm:mx-10 mt-7">
       <Card.Header>
         <div class="grid grid-cols-2">
           <div class="text-start">
@@ -36,7 +36,7 @@
       </Card.Content>
     </Card.Root>
     <!-- CYF -->
-    <Card.Root class="w-[80vw] md:w-[55vw] lg:w-[50vw] mx-10 mt-7">
+    <Card.Root class="w-[80vw] md:w-[55vw] lg:w-[50vw] sm:mx-10 mt-7">
       <Card.Header>
         <div class="grid grid-cols-2">
           <div class="text-start">
@@ -66,7 +66,7 @@
     <h2 class="font-bold text-2xl">Extracurricular</h2>
     <Separator class="my-3" />
     <!-- Sourceware -->
-    <Card.Root class="w-[80vw] md:w-[55vw] lg:w-[50vw] mx-10 mt-7 mb-7">
+    <Card.Root class="w-[80vw] md:w-[55vw] lg:w-[50vw] sm:mx-10 mt-7">
       <Card.Header>
         <div class="grid grid-cols-2">
           <div class="text-start">

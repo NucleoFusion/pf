@@ -10,7 +10,7 @@
   <h1 class="text-4xl font-bold">Introduction</h1>
   <Separator class="my-3" />
   <div
-    class="pl-8 pt-4 text-lg grid gap-10 grid-cols-2 justify-center items-center md:pr-50"
+    class="pl-8 pt-4 text-lg grid gap-10 grid-cols-1 lg:grid-cols-2 justify-center items-center md:pr-50"
   >
     <div>
       <img
@@ -31,11 +31,11 @@
         class:invisible={isLoading}
       />
     </div>
-    <div class="col-span-2 grid justify-center items-center">
+    <div class="lg:col-span-2 grid justify-center items-center">
       <img
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=NucleoFusion&exclude_repo=dotflyes&bg_color=0d0d0d&title_color=ffffff&text_color=ffffff&icon_color=fffffff8&border_color=27272a"
         alt="Top Languages"
-        class="rounded inline w-[25vw] col-span-full"
+        class="rounded lg:w-[25vw]"
       />
     </div>
   </div>
