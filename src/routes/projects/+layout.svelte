@@ -27,19 +27,31 @@
         abb: "toney",
       },
       {
-        title: "LapisOAuth",
-        link: "/projects/lapisoauth",
-        abb: "lapisoauth",
+        title: "GladOS Bot",
+        link: "/projects/glados",
+        abb: "glados",
       },
+      {
+        title: "Cruise",
+        link: "/projects/cruise",
+        abb: "cruise",
+      },
+      {
+        title: "Wyvern",
+        link: "/projects/wyvern",
+        abb: "wyvern",
+      },
+    ],
+    completed: [
       {
         title: "D2D",
         link: "/projects/d2d",
         abb: "d2d",
       },
       {
-        title: "GladOS Bot",
-        link: "/projects/glados",
-        abb: "glados",
+        title: "LapisOAuth",
+        link: "/projects/lapisoauth",
+        abb: "lapisoauth",
       },
     ],
     archived: [
@@ -59,21 +71,6 @@
         title: "SqueelDB",
         link: "/projects/squeel",
         abb: "squeel",
-      },
-      {
-        title: "Katalogue",
-        link: "/projects/katalogue",
-        abb: "katalogue",
-      },
-      {
-        title: "LapisChat",
-        link: "/projects/lapischat",
-        abb: "lapischat",
-      },
-      {
-        title: "Sourcecord",
-        link: "/projects/sourcecord",
-        abb: "sourcecord",
       },
       {
         title: "SOS",
@@ -148,6 +145,24 @@
               <Sidebar.GroupContent>
                 <Sidebar.Menu class="pl-2 pt-2">
                   {#each items.highlighted as item}
+                    <Sidebar.MenuItem>
+                      <Sidebar.MenuButton
+                        class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}
+                        onclick={() => redirectTo(item)}
+                        >{item.title}</Sidebar.MenuButton
+                      >
+                    </Sidebar.MenuItem>
+                  {/each}
+                </Sidebar.Menu>
+              </Sidebar.GroupContent>
+            </Sidebar.Group>
+            <Sidebar.Group>
+              <Sidebar.GroupLabel class="text-md"
+                >Completed/Side</Sidebar.GroupLabel
+              >
+              <Sidebar.GroupContent>
+                <Sidebar.Menu class="pl-2 pt-2">
+                  {#each items.completed as item}
                     <Sidebar.MenuItem>
                       <Sidebar.MenuButton
                         class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}

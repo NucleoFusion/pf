@@ -9,9 +9,8 @@ const validProjects = [
   'lapisblog',
   'footballapi',
   'squeel',
-  'katalogue',
-  'lapischat',
-  'sourcecord',
+  'cruise',
+  'wyvern',
   'sos'
 ];
 

@@ -6,11 +6,10 @@
   import Glados from "./components/glados-bot.svelte";
   import Neo from "./components/neo.svelte";
   import Lapisblog from "./components/lapisblog.svelte";
-  import Lapischat from "./components/lapischat.svelte";
   import Squeeldb from "./components/squeeldb.svelte";
-  import Katalogue from "./components/katalogue.svelte";
   import Sos from "./components/sos.svelte";
-  import Sourcecord from "./components/sourcecord.svelte";
+  import Cruise from "./components/cruise.svelte";
+  import Wyvern from "./components/wyvern.svelte";
 
   $: project = $page.params.project;
 </script>
@@ -29,12 +28,10 @@
   <Lapisblog />
 {:else if project == "squeel"}
   <Squeeldb />
-{:else if project == "katalogue"}
-  <Katalogue />
-{:else if project == "lapischat"}
-  <Lapischat />
-{:else if project == "sourcecord"}
-  <Sourcecord />
 {:else if project == "sos"}
   <Sos />
+{:else if project == "wyvern"}
+  <Wyvern />
+{:else if project == "cruise"}
+  <Cruise />
 {/if}
