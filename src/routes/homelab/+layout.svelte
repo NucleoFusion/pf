@@ -38,17 +38,22 @@
         link: "/homelab/containers",
         abb: "containers",
       },
+      {
+        title: "Harbor",
+        link: "/homelab/harbor",
+        abb: "harbor",
+      },
+      {
+        title: "Monitoring",
+        link: "/homelab/monitoring",
+        abb: "monitoring",
+      },
     ],
     planned: [
       {
         title: "Gitea",
         link: "/homelab/gitea",
         abb: "gitea",
-      },
-      {
-        title: "Grafana & Prometheus",
-        link: "/homelab/grafana",
-        abb: "grafana",
       },
       {
         title: "Adblocker",

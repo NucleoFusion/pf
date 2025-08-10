@@ -6,11 +6,8 @@ const validDots = [
   'specs',
   'niri',
   'containers',
-  'gitea',
-  'grafana',
-  'adblocker',
-  'cdn',
-  "nas",
+  'harbor',
+  'monitoring',
   'path'
 ];
 

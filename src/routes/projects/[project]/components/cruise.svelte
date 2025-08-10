@@ -4,7 +4,6 @@
   import Github from "@lucide/svelte/icons/github";
 </script>
 
-<!-- TODO: Fill Readme first -->
 <div class="mt-3 mb-20">
   <div class="grid grid-cols-2">
     <div class="text-start">
@@ -30,7 +29,14 @@
         <li>Docker</li>
       </ol>
       <br />
-      <p class="md:pr-50">TBD</p>
+      <p class="md:pr-50">
+        Cruise is a powerful, intuitive, and fully-featured TUI (Terminal User
+        Interface) for interacting with Docker. Built with Go and
+        <a href="https://github.com/charmbracelet/bubbletea">Bubbletea</a>, it
+        offers a visually rich, mouse-less experience for managing containers,
+        images, volumes, networks, Compose stacks, and more — all from your
+        terminal.
+      </p>
     </div>
     <h2 class="text-2xl font-bold pt-2">My Experience</h2>
     <Separator class="my-3" />
