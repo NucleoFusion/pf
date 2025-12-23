@@ -59,7 +59,7 @@
       </NavigationMenu.Link>
       <NavigationMenu.Link
         class="rounded-full w-8 h-8 bg-transparent text-foreground cursor-pointer  hover:text-accent-foreground hover:bg-accent transition-colors duration-200"
-        href="https://www.overleaf.com/read/vndtthpvjhjh#cd4117"
+        href="https://www.overleaf.com/download/project/68bd66c387d7ceb54fe19c01/build/19b4a339b23-852a11f45d3fe795/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-c3d-d-f-18nz&enable_pdf_caching=true&popupDownload=true"
       >
         <FileUser class="text-foreground" />
       </NavigationMenu.Link>

@@ -1,10 +1,9 @@
 <script>
   import Separator from "$lib/components/ui/separator/separator.svelte";
-  import * as Card from "$lib/components/ui/card/index.ts";
 </script>
 
 <div class="mt-3 w-[84vw]">
-  <h1 class="text-4xl font-bold">Roadmap</h1>
+  <h1 class="text-4xl font-bold">Roadmap / Timeline</h1>
   <Separator class="my-3" />
   <p class="pl-4">
     You can find the full repository <a

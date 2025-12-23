@@ -19,84 +19,29 @@
     duration: 200,
     delay: 200,
   };
-  let items = {
-    highlighted: [
-      {
-        title: "Toney",
-        link: "/projects/toney",
-        abb: "toney",
-      },
-      {
-        title: "GladOS Bot",
-        link: "/projects/glados",
-        abb: "glados",
-      },
-      {
-        title: "Cruise",
-        link: "/projects/cruise",
-        abb: "cruise",
-      },
-      {
-        title: "Wyvern",
-        link: "/projects/wyvern",
-        abb: "wyvern",
-      },
-    ],
-    completed: [
-      {
-        title: "D2D",
-        link: "/projects/d2d",
-        abb: "d2d",
-      },
-      {
-        title: "LapisOAuth",
-        link: "/projects/lapisoauth",
-        abb: "lapisoauth",
-      },
-    ],
-    archived: [
-      {
-        title: "Neo",
-        link: "/projects/neo",
-        abb: "neo",
-      },
-      {
-        title: "LapisBlog",
-        link: "/projects/lapisblog",
-        abb: "lapisblog",
-      },
-    ],
-    planned: [
-      {
-        title: "SqueelDB",
-        link: "/projects/squeel",
-        abb: "squeel",
-      },
-      {
-        title: "SOS",
-        link: "/projects/sos",
-        abb: "sos",
-      },
-    ],
-  };
+
+  let items = [
+    {
+      title: "Toney",
+      link: "/projects/toney",
+      abb: "toney",
+    },
+    {
+      title: "Cruise",
+      link: "/projects/cruise",
+      abb: "cruise",
+    },
+  ];
 
   let isOpen = $state(true);
   let selected: Item = $state(
-    items.highlighted.filter(
+    items.filter(
       (item) => item.abb == $page.url.pathname.split("/").filter(Boolean).pop(),
-    )[0] ||
-      items.archived.filter(
-        (item) =>
-          item.abb == $page.url.pathname.split("/").filter(Boolean).pop(),
-      )[0] ||
-      items.planned.filter(
-        (item) =>
-          item.abb == $page.url.pathname.split("/").filter(Boolean).pop(),
-      )[0] || {
-        title: "Introduction",
-        abb: "",
-        link: "/projects",
-      },
+    )[0] || {
+      title: "Introduction",
+      abb: "",
+      link: "/projects",
+    },
   );
 
   function redirectTo(item: any) {
@@ -123,89 +68,30 @@
       {#if isOpen}
         <div in:fade={fadeIn}>
           {#key selected}
-            <Sidebar.Group>
-              <Sidebar.Menu>
+            <Sidebar.Menu class="pl-2 pt-2">
+              <Sidebar.MenuItem>
+                <Sidebar.MenuButton
+                  class={`${selected.abb == "" ? "bg-muted text-foreground" : ""}`}
+                  onclick={() =>
+                    redirectTo({
+                      abb: "",
+                      title: "Introduction",
+                      link: "/projects",
+                    })}>Introduction</Sidebar.MenuButton
+                >
+              </Sidebar.MenuItem>
+            </Sidebar.Menu>
+            <Sidebar.Menu class="pl-2 pt-2">
+              {#each items as item}
                 <Sidebar.MenuItem>
                   <Sidebar.MenuButton
-                    class={`${selected.abb == "" ? "bg-muted text-foreground" : ""}`}
-                    onclick={() =>
-                      redirectTo({
-                        abb: "",
-                        title: "Introduction",
-                        link: "/projects",
-                      })}>Introduction</Sidebar.MenuButton
+                    class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}
+                    onclick={() => redirectTo(item)}
+                    >{item.title}</Sidebar.MenuButton
                   >
                 </Sidebar.MenuItem>
-              </Sidebar.Menu>
-            </Sidebar.Group>
-            <Sidebar.Group>
-              <Sidebar.GroupLabel class="text-md"
-                >Highlighted</Sidebar.GroupLabel
-              >
-              <Sidebar.GroupContent>
-                <Sidebar.Menu class="pl-2 pt-2">
-                  {#each items.highlighted as item}
-                    <Sidebar.MenuItem>
-                      <Sidebar.MenuButton
-                        class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}
-                        onclick={() => redirectTo(item)}
-                        >{item.title}</Sidebar.MenuButton
-                      >
-                    </Sidebar.MenuItem>
-                  {/each}
-                </Sidebar.Menu>
-              </Sidebar.GroupContent>
-            </Sidebar.Group>
-            <Sidebar.Group>
-              <Sidebar.GroupLabel class="text-md"
-                >Completed/Side</Sidebar.GroupLabel
-              >
-              <Sidebar.GroupContent>
-                <Sidebar.Menu class="pl-2 pt-2">
-                  {#each items.completed as item}
-                    <Sidebar.MenuItem>
-                      <Sidebar.MenuButton
-                        class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}
-                        onclick={() => redirectTo(item)}
-                        >{item.title}</Sidebar.MenuButton
-                      >
-                    </Sidebar.MenuItem>
-                  {/each}
-                </Sidebar.Menu>
-              </Sidebar.GroupContent>
-            </Sidebar.Group>
-            <Sidebar.Group>
-              <Sidebar.GroupLabel class="text-md">Planned</Sidebar.GroupLabel>
-              <Sidebar.GroupContent>
-                <Sidebar.Menu class="pl-2 pt-2">
-                  {#each items.planned as item}
-                    <Sidebar.MenuItem>
-                      <Sidebar.MenuButton
-                        class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}
-                        onclick={() => redirectTo(item)}
-                        >{item.title}</Sidebar.MenuButton
-                      >
-                    </Sidebar.MenuItem>
-                  {/each}
-                </Sidebar.Menu>
-              </Sidebar.GroupContent>
-            </Sidebar.Group>
-            <Sidebar.Group>
-              <Sidebar.GroupLabel class="text-md">Hiatus</Sidebar.GroupLabel>
-              <Sidebar.GroupContent>
-                <Sidebar.Menu class="pl-2 pt-2">
-                  {#each items.archived as item}
-                    <Sidebar.MenuItem>
-                      <Sidebar.MenuButton
-                        class={`${item.abb == selected.abb ? "bg-muted text-foreground" : ""}`}
-                        onclick={() => redirectTo(item)}
-                        >{item.title}</Sidebar.MenuButton
-                      >
-                    </Sidebar.MenuItem>
-                  {/each}
-                </Sidebar.Menu>
-              </Sidebar.GroupContent>
-            </Sidebar.Group>
+              {/each}
+            </Sidebar.Menu>
           {/key}
         </div>
       {/if}
